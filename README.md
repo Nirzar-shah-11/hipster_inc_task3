@@ -104,7 +104,27 @@ Sidebar settings:
 
 ---
 
-## 3. Training metrics
+## 3. Steps to close everything
+
+### Stop the Streamlit client
+- In the terminal where it's running, press **Ctrl + C**.
+
+
+### Stop the Colab server
+1. In `task3_server.ipynb`, run the cell under **"Kill the server"**:
+   ```python
+   if 'server' in locals() and server.poll() is None:
+     os.system("fuser -k 8000/tcp")
+   ```
+   This stops the FastAPI process on port 8000.
+
+2. Fully release the GPU by disconnecting the runtime:
+   **Runtime → Disconnect and delete runtime** (or just close the Colab
+   tab). This frees up your Colab GPU quota for next time.
+
+---
+
+## 4. Training metrics
 
 Evaluated on the **AffectNet** face test set:
 
@@ -131,7 +151,7 @@ _FPS / real-time performance benchmark results to be added._
 
 ---
 
-## 4. Project structure
+## 5. Project structure
 
 ```
 .
