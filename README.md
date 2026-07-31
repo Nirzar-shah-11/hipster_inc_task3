@@ -1,6 +1,6 @@
 # Video Emotion Detection — YOLOv8
 
-Real-time and offline facial emotion detection. A fine-tuned YOLOv8 model runs
+Real-time and offline facial emotion detection. A fine-tuned YOLOv8 model (Finedtuned on AffectNet dataset) runs
 as a REST API on a free GPU (Google Colab), tunneled to the internet with
 ngrok, and a Streamlit web app sends it video frames (either an uploaded file
 or your live webcam) and displays annotated results.
