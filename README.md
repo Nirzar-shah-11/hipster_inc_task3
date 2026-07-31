@@ -63,6 +63,7 @@ or your live webcam) and displays annotated results.
    ```bash
    pip install -r requirements.txt
    ```
+   Note** Python version 3.12.7 was used . 
 3. Launch the app:
    ```bash
    streamlit run app.py
