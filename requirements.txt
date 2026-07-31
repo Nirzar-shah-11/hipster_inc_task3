@@ -1,0 +1,9 @@
+streamlit
+opencv-python
+requests
+pandas
+fastapi
+uvicorn
+python-multipart
+av
+streamlit_webrtc
